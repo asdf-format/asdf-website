@@ -14,10 +14,15 @@ classifiers = [
     'Programming Language :: Python :: 3.12',
     'Development Status :: 5 - Production/Stable',
 ]
+version = '0.0.0'
 dependencies = [
     'sphinx',
     'furo',
-    'sphinx-autobuild',
     'tomli',
 ]
-version = '0.0.0'
+[project.optional-dependencies]
+docs = [
+    'sphinx-autobuild',
+]
+
+
