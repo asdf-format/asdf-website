@@ -138,6 +138,7 @@ a:hover {
 
 .splash-container {
   z-index: 3;
+  margin-top: 15%;
   overflow: visible;
 }
 
@@ -147,6 +148,7 @@ a:hover {
 .splash-image {
   max-width: 25%;
   min-width: 25em;
+  top: 25%;
   z-index: 3;
   justify-content: center;
   text-align: center;
@@ -185,10 +187,10 @@ a:hover {
 
 .star-animation:before {
   background-size: 100% auto;
-  -webkit-animation: rotate 30s infinite linear;
-  -moz-animation: rotate 30s infinite linear;
-  -o-animation: rotate 30s infinite linear;
-  animation: rotate 30s infinite linear;
+  -webkit-animation: rotate 80s infinite linear;
+  -moz-animation: rotate 80s infinite linear;
+  -o-animation: rotate 80s infinite linear;
+  animation: rotate 80s infinite linear;
 }
 
 .star-animation:after {
@@ -225,4 +227,47 @@ a:hover {
   color: #fff;
   background-color: #f14d2d;
   border-color: #11c192;
+}
+
+/* Star Animation
+-------------------------------------------------- */
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
