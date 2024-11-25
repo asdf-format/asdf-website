@@ -107,6 +107,7 @@ a:hover {
 .splash {
   width: 100vw;
   height: 100vh;
+  min-height: 99vw;
   margin: 0;
   padding: 0;
   /* background-color: #fff; */
@@ -137,15 +138,19 @@ a:hover {
 
 .splash-container {
   z-index: 3;
+  overflow: visible;
 }
 
 
 
   
 .splash-image {
-  max-width: 70%;
+  max-width: 25%;
   min-width: 25em;
   z-index: 3;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 
