@@ -1,3 +1,5 @@
+/* RTD Sphinx overrides */
+
 div.admonition {
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
@@ -125,26 +127,14 @@ a:hover {
   width: 100% auto;
   top: 50%;
 }
-/* mountains */
-/* .hero-image {
-  z-index: 2;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .splash-container {
   z-index: 3;
   margin-top: 15%;
   overflow: visible;
+  text-align: center;
 }
 
-
-
-  
 .splash-image {
   max-width: 25%;
   min-width: 25em;
@@ -154,7 +144,6 @@ a:hover {
   text-align: center;
   align-items: center;
 }
-
 
 .star-animation {
   text-align: center;
@@ -195,10 +184,10 @@ a:hover {
 
 .star-animation:after {
   background-size: 100% auto;
-  -webkit-animation: rotate 80s infinite linear;
-  -moz-animation: rotate 80s infinite linear;
-  -o-animation: rotate 80s infinite linear;
-  animation: rotate 80s infinite linear;
+  -webkit-animation: rotate 100s infinite linear;
+  -moz-animation: rotate 100s infinite linear;
+  -o-animation: rotate 100s infinite linear;
+  animation: rotate 100s infinite linear;
 }
 
 /* Responsive layout for phones */

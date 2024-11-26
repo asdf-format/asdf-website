@@ -17,11 +17,11 @@
 
     <style>
         .star-animation:before {
-            background-image: url("{{pathto('_static/images/stars.svg', 1)}}");
+            background-image: url("{{pathto('_static/images/star-hemispheres.svg', 1)}}");
             z-index: 1;
         }
         .star-animation:after {
-            background-image: url("{{pathto('_static/images/stars.svg', 1)}}");
+            background-image: url("{{pathto('_static/images/star-hemispheres.svg', 1)}}");
             z-index: 1;
         }
         .splash-sky {
@@ -57,7 +57,7 @@
                         <a class="nav-link" href="{{ pathto('overview') }}">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ pathto('applications/index') }}">Applications</a>
+                        <a class="nav-link" href="{{ pathto('standard/index') }}">The Standard</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
@@ -67,6 +67,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
                             <a class="dropdown-item" href="{{ pathto('tutorials/index') }}">Tutorials</a>
                             <a class="dropdown-item" href="{{ pathto('extensions/index') }}">Extensions</a>
+                            <a class="dropdown-item" href="{{ pathto('applications/index') }}">Applications</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -75,10 +76,11 @@
                             Community
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                            <a class="dropdown-item" href="https://github.com/asdf-format/asdf-standard">The ASDF Standard</a>
+                            <a class="dropdown-item" href="https://github.com/asdf-format">Github Repos</a>
+                            <!-- <a class="dropdown-item" href="https://github.com/asdf-format/asdf-standard">The ASDF Standard</a>
                             <a class="dropdown-item" href="https://github.com/asdf-format/asdf">ASDF Python</a>
-                            <a class="dropdown-item" href="https://github.com/asdf-format/asdf-cpp">ASDF C++</a>
-                            <a class="dropdown-item" href="https://pypi.org/project/asdf/">ASDF PyPI Package</a>
+                            <a class="dropdown-item" href="https://github.com/asdf-format/asdf-cpp">ASDF C++</a> -->
+                            <a class="dropdown-item" href="https://pypi.org/project/asdf/">PyPI</a>
                             <a class="dropdown-item"
                                 href="https://github.com/asdf-format/asdf/discussions">Discussions</a>
                             <a class="dropdown-item" href="https://github.com/asdf-format/community-calls/">Community Calls</a>
@@ -96,13 +98,13 @@
                     <div class="splash splash-mountain">
                         <div class="splash-container">
                             <div class="container">
-                                <img class="splash-image" src=" {{ pathto('_static/images/asdf-logo.svg', 1) }} " alt="ASDF Logo">
+                                <img class="splash-image" src=" {{ pathto('_static/images/asdf-logo.svg', 1) }} " alt="ASDF Logo" style="margin-left:5em;">
                                 <h1 style="color:black; text-align:center;"><b>Advanced Scientific Data Format</b></h1>
                             </div>
                             <h4 style="text-align: center; padding:5px;">The highly extensible and human-readable tree-based data structure for text <em>and</em> binary data</h4>
                             <p style="text-align:center;">
-                                <a href=" {{ pathto('overview') }} " class="btn btn-primary filled-asdf btn-lg">Get Started</a>
-                                <!-- <a href=" {{ pathto('schemas/index') }} " class="btn btn-secondary outline-asdf btn-lg">Schemas</a> -->
+                                <a href=" {{ pathto('overview') }} " class="btn btn-primary filled-asdf btn-lg">Overview</a>
+                                <a href=" {{ pathto('tutorials/index') }} " class="btn btn-secondary outline-asdf btn-lg">Tutorials</a>
                             </p>
                         </div>
                     </div>
