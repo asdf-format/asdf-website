@@ -1,49 +1,3 @@
-/* RTD Sphinx overrides */
-
-div.admonition {
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    overflow: hidden;
-}
-
-div.admonition:active {
-    width: 150%
-}
-
-div.note:active {
-    width: 100%
-}
-
-div.highlight-yaml {
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    overflow: hidden;
-}
-
-div.highlight-yaml:active {
-    width: 150%
-}
-
-div.highlight-default {
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    overflow: hidden;
-}
-
-div.highlight-default:active {
-    width: 150%
-}
-
-div.highlight-python {
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    overflow: hidden;
-}
-
-div.highlight-python:active {
-    width: 150%
-}
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -103,46 +57,30 @@ a:hover {
   background-color: #00A87B;
 }
 
-/* Hero element
+/* Splash element
 -------------------------------------------------- */
 
 .splash {
-  width: 100vw;
-  height: 100vh;
-  min-height: 99vw;
+  width: 99vw;
+  height: 99vh;
   margin: 0;
   padding: 0;
-  /* background-color: #fff; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  color: black;
+  text-align: center;
 }
 
-.splash-mountain {
-  z-index: 2;
+.splash-sky {
+  background-size: cover;
   background-position: center;
-  width: 100% auto;
-  top: 50%;
-}
-
-.splash-container {
-  z-index: 3;
-  margin-top: 15%;
-  overflow: visible;
-  text-align: center;
-}
-
-.splash-image {
-  max-width: 25%;
-  min-width: 25em;
-  top: 25%;
-  z-index: 3;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
 .star-animation {
@@ -154,7 +92,8 @@ a:hover {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  background-repeat: repeat-x;
+  background-image: url("_static/images/star-hemispheres.svg");
+  background-repeat: no-repeat;
   z-index:1;
 }
 
@@ -172,50 +111,23 @@ a:hover {
   background-repeat: repeat-x;
   top: 50%;
   left: 50%;
+  z-index: 1;
 }
 
 .star-animation:before {
   background-size: 100% auto;
-  -webkit-animation: rotate 80s infinite linear;
-  -moz-animation: rotate 80s infinite linear;
-  -o-animation: rotate 80s infinite linear;
-  animation: rotate 80s infinite linear;
+  -webkit-animation: rotate 130s infinite linear;
+  -moz-animation: rotate 130s infinite linear;
+  -o-animation: rotate 130s infinite linear;
+  animation: rotate 130s infinite linear;
 }
 
 .star-animation:after {
   background-size: 100% auto;
-  -webkit-animation: rotate 100s infinite linear;
-  -moz-animation: rotate 100s infinite linear;
-  -o-animation: rotate 100s infinite linear;
-  animation: rotate 100s infinite linear;
-}
-
-/* Responsive layout for phones */
-@media (max-width: 767px) {
-  .star-animation {
-    min-width: auto;
-  }
-}
-
-/* Buttons
--------------------------------------------------- */
-
-.outline-asdf {
-  color: #31373e;
-  background-color: transparent;
-  border-color: #11c192;
-}
-
-.filled-asdf {
-  color: #fff;
-  background-color: #00A87B;
-  border-color: #11c192;
-}
-
-.filled-asdf:hover {
-  color: #fff;
-  background-color: #f14d2d;
-  border-color: #11c192;
+  -webkit-animation: rotate 130s infinite linear;
+  -moz-animation: rotate 130s infinite linear;
+  -o-animation: rotate 130s infinite linear;
+  animation: rotate 130s infinite linear;
 }
 
 /* Star Animation
@@ -259,4 +171,195 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.splash-mountain {
+  z-index: 2;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+  padding: 0;
+  top: 50%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+
+.splash-container {
+  z-index: 3;
+  text-align: center;
+}
+
+
+.splash-image {
+  max-width: 25%;
+  min-width: 25em;
+  top: 25%;
+  z-index: 3;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.splash-text {
+  color: black;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.splash-text h1 {
+  font-size: 2.5rem;
+}
+
+.splash-text h4 {
+  font-size: 1.5rem;
+}
+
+.splash-text p {
+  padding: 5px; 
+}
+
+
+/* Responsive layout for phones 
+-------------------------------------------------- */
+@media (max-width: 767px) {
+  .star-animation {
+    min-width: auto;
+  }
+
+  .splash {
+    min-height: 100%;
+  }
+
+  .splash-image {
+    margin: 0 auto;
+    max-height: 15rem;
+  }
+
+  .splash-text h1 {
+    font-size: 2rem;
+  }
+
+  .splash-text h4 {
+      font-size: 1rem;
+      padding: 5px;
+  }
+
+}
+
+/* Buttons
+-------------------------------------------------- */
+
+.outline-asdf {
+  color: #31373e;
+  background-color: transparent;
+  border-color: #11c192;
+}
+
+.filled-asdf {
+  color: #fff;
+  background-color: #00A87B;
+  border-color: #11c192;
+}
+
+.filled-asdf:hover {
+  color: #fff;
+  background-color: #f14d2d;
+  border-color: #11c192;
+}
+
+
+/* Icons
+-------------------------------------------------- */
+
+.icon {
+  position: relative;
+  color: fuchsia;
+  margin-bottom: 10px;
+}
+
+
+/* Feature Elements
+-------------------------------------------------- */
+
+.main-features {
+  text-align: center;
+  z-index: 3;
+  background-color: white;
+}
+
+.main-features .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.main-features h2 {
+  font-weight: 400;
+}
+
+.main-features .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.section-divider {
+  margin: 5rem 0;
+}
+
+
+/* FOOTER */
+
+footer {
+  position: absolute
+}
+
+
+/* RTD Sphinx overrides */
+
+div.admonition {
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  overflow: hidden;
+}
+
+div.admonition:active {
+  width: 150%
+}
+
+div.note:active {
+  width: 100%
+}
+
+div.highlight-yaml {
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  overflow: hidden;
+}
+
+div.highlight-yaml:active {
+  width: 150%
+}
+
+div.highlight-default {
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  overflow: hidden;
+}
+
+div.highlight-default:active {
+  width: 150%
+}
+
+div.highlight-python {
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  overflow: hidden;
+}
+
+div.highlight-python:active {
+  width: 150%
 }

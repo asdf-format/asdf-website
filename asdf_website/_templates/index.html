@@ -12,6 +12,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
+    <!-- FontAwesome Icon Kit -->
+    <!-- <script src="https://kit.fontawesome.com/e8ce6605ff.js" crossorigin="anonymous"></script> -->
+    <link href=" {{ pathto('_static/fontawesome/css/fontawesome.css', 1) }}" rel="stylesheet" />
+    <link href=" {{ pathto('_static/fontawesome/css/brands.css', 1) }}" rel="stylesheet" />
+    <link href=" {{ pathto('_static/fontawesome/css/solid.css', 1) }}" rel="stylesheet" />
+
     <!-- Custom styles -->
     <link href=" {{ pathto('_static/css/custom.css', 1) }}" rel="stylesheet">
 
@@ -92,17 +98,15 @@
     </header>
 
     <main role="main">
-        <section class="splash text-center">
-            <div class="splash splash-sky">
+        <section class="splash">
+            <div class="splash-sky">
                 <div class="star-animation">
-                    <div class="splash splash-mountain">
-                        <div class="splash-container">
-                            <div class="container">
-                                <img class="splash-image" src=" {{ pathto('_static/images/asdf-logo.svg', 1) }} " alt="ASDF Logo" style="margin-left:5em;">
-                                <h1 style="color:black; text-align:center;"><b>Advanced Scientific Data Format</b></h1>
-                            </div>
-                            <h4 style="text-align: center; padding:5px;">The highly extensible and human-readable tree-based data structure for text <em>and</em> binary data</h4>
-                            <p style="text-align:center;">
+                    <div class="splash-mountain">
+                        <div class="splash-container splash-text">
+                            <img class="splash-image" src=" {{ pathto('_static/images/asdf-logo.svg', 1) }} " alt="ASDF Logo">
+                            <h1><b>Advanced Scientific Data Format</b></h1>
+                            <h4 style="overflow:visible;">The highly extensible and human-readable tree-based data structure for text <em>and</em> binary data</h4>
+                            <p>
                                 <a href=" {{ pathto('overview') }} " class="btn btn-primary filled-asdf btn-lg">Overview</a>
                                 <a href=" {{ pathto('tutorials/index') }} " class="btn btn-secondary outline-asdf btn-lg">Tutorials</a>
                             </p>
@@ -110,15 +114,62 @@
                     </div>
                 </div>
             </div>
-        </section>
+
+
+        <div class="container main-features">
+            <hr class="section-divider">
+            <div class="row">
+                <div class="col-lg-4">
+                    <span class="icon">
+                        <i class="fa-solid fa-code-branch fa-4x"></i>
+                    </span>
+                    <h2>Schemas</h2>
+                    <p>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                    </p>
+                    <p><a class="btn btn-secondary filled-asdf" href="{{ pathto('extensions/index') }}" role="button">Learn
+                            more &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <span class="icon">
+                        <i class="fa-solid fa-code fa-4x"></i>
+                    </span>
+                    <h2>Applications</h2>
+                    <p>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                    </p>
+                    <p><a class="btn btn-secondary filled-asdf" href=" {{ pathto('applications/index') }} "
+                            role="button">Start coding &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <span class="icon">
+                        <i class="fa-solid fa-flask fa-4x"></i>
+                    </span>
+                    <h2>Tutorials</h2>
+                    <p>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                    </p>
+                    <p><a class="btn btn-secondary filled-asdf" href="{{ pathto('tutorials/index') }}"
+                            role="button">Try for yourself &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+
+
         <!-- FOOTER -->
         <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
+            <p class="float-left"><a href="#">Back to top</a></p>
             <p> <a href="https://github.com/asdf-format/asdf-standard">GitHub Page</a> &middot; 
                 <a href="https://github.com/asdf-format/asdf-standard/blob/main/LICENSE">License</a>
             </p>
-
         </footer>
+    </section>
     </main>
 
     <!-- Bootstrap core JavaScript
