@@ -173,12 +173,11 @@ a:hover {
 }
 
 .splash-mountain {
-  z-index: 2;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 100%;
-  margin-top: 20%;
+  margin-top: 10%;
   padding: 0;
   top: 30%;
   background-repeat: no-repeat;
@@ -188,6 +187,7 @@ a:hover {
 .splash-container {
   z-index: 3;
   text-align: center;
+  margin-top: 7%;
 }
 
 .splash-image {
@@ -205,7 +205,6 @@ a:hover {
   color: black;
   text-align: center;
   padding: 5%;
-  margin-bottom: 5%;
 }
 
 .splash-text h1 {
@@ -276,8 +275,8 @@ a:hover {
 }
 
 .filled-asdf:hover {
-  color: #fff;
-  background-color: #f14d2d;
+  color: #000;
+  background-color: #fff;
   border-color: #11c192;
 }
 
