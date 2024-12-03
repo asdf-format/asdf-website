@@ -59,7 +59,6 @@ a:hover {
 
 /* Splash element
 -------------------------------------------------- */
-
 .splash {
   width: 99vw;
   height: 99vh;
@@ -181,17 +180,15 @@ a:hover {
   height: 100%;
   margin-top: 20%;
   padding: 0;
-  top: 50%;
+  top: 30%;
   background-repeat: no-repeat;
   z-index: 2;
 }
-
 
 .splash-container {
   z-index: 3;
   text-align: center;
 }
-
 
 .splash-image {
   max-width: 25%;
@@ -207,8 +204,8 @@ a:hover {
 .splash-text {
   color: black;
   text-align: center;
-  margin-bottom: 5px;
-  padding: 10px;
+  padding: 5%;
+  margin-bottom: 5%;
 }
 
 .splash-text h1 {
@@ -223,6 +220,19 @@ a:hover {
   padding: 5px; 
 }
 
+/* Responsive layout for tablets 
+-------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .splash-text {
+    padding: 10%;
+  }
+  .main-features .col-lg-4 {
+    padding: 5% 0;
+  }
+  .main-features .col-lg-4 p {
+    padding: 0 10%;
+  }
+}
 
 /* Responsive layout for phones 
 -------------------------------------------------- */
@@ -238,6 +248,7 @@ a:hover {
   .splash-image {
     margin: 0 auto;
     max-height: 15rem;
+    min-width: 15rem;
   }
 
   .splash-text h1 {
@@ -248,12 +259,10 @@ a:hover {
       font-size: 1rem;
       padding: 5px;
   }
-
 }
 
 /* Buttons
 -------------------------------------------------- */
-
 .outline-asdf {
   color: #31373e;
   background-color: transparent;
@@ -272,24 +281,20 @@ a:hover {
   border-color: #11c192;
 }
 
-
 /* Icons
 -------------------------------------------------- */
-
 .icon {
-  position: relative;
   color: fuchsia;
-  margin-bottom: 10px;
+  margin-bottom: 10px 0;
 }
-
 
 /* Feature Elements
 -------------------------------------------------- */
-
 .main-features {
-  text-align: center;
-  z-index: 3;
-  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
 }
 
 .main-features .col-lg-4 {
@@ -307,19 +312,20 @@ a:hover {
 }
 
 .section-divider {
-  margin: 5rem 0;
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-
-/* FOOTER */
-
+/* FOOTER
+-------------------------------------------------- */
 footer {
   position: absolute
 }
 
-
-/* RTD Sphinx overrides */
-
+/* RTD Sphinx overrides
+-------------------------------------------------- */
 div.admonition {
   transition: width 0.5s;
   -webkit-transition: width 0.5s;

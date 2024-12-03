@@ -11,11 +11,9 @@
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
     <!-- FontAwesome Icon Kit -->
     <!-- <script src="https://kit.fontawesome.com/e8ce6605ff.js" crossorigin="anonymous"></script> -->
     <link href=" {{ pathto('_static/fontawesome/css/fontawesome.css', 1) }}" rel="stylesheet" />
-    <link href=" {{ pathto('_static/fontawesome/css/brands.css', 1) }}" rel="stylesheet" />
     <link href=" {{ pathto('_static/fontawesome/css/solid.css', 1) }}" rel="stylesheet" />
 
     <!-- Custom styles -->
@@ -53,7 +51,7 @@
 
             <div class="navbar-light bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
@@ -66,26 +64,23 @@
                         <a class="nav-link" href="{{ pathto('standard/index') }}">The Standard</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="get-started-dropdown-menu" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Get Started
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <div class="dropdown-menu" aria-labelledby="get-started-dropdown-menu">
                             <a class="dropdown-item" href="{{ pathto('tutorials/index') }}">Tutorials</a>
                             <a class="dropdown-item" href="{{ pathto('extensions/index') }}">Extensions</a>
                             <a class="dropdown-item" href="{{ pathto('applications/index') }}">Applications</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="community-dropdown-menu" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Community
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <div class="dropdown-menu" aria-labelledby="community-dropdown-menu">
                             <a class="dropdown-item" href="https://github.com/asdf-format">Github Repos</a>
-                            <!-- <a class="dropdown-item" href="https://github.com/asdf-format/asdf-standard">The ASDF Standard</a>
-                            <a class="dropdown-item" href="https://github.com/asdf-format/asdf">ASDF Python</a>
-                            <a class="dropdown-item" href="https://github.com/asdf-format/asdf-cpp">ASDF C++</a> -->
                             <a class="dropdown-item" href="https://pypi.org/project/asdf/">PyPI</a>
                             <a class="dropdown-item"
                                 href="https://github.com/asdf-format/asdf/discussions">Discussions</a>
@@ -115,61 +110,59 @@
                 </div>
             </div>
 
+            <div class="container main-features">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <span class="icon">
+                            <i class="fa-solid fa-code-branch fa-4x"></i>
+                        </span>
+                        <h2>Schemas</h2>
+                        <p>
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                        </p>
+                        <p><a class="btn btn-secondary filled-asdf" href="{{ pathto('extensions/index') }}" role="button">Learn
+                                more &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="icon">
+                            <i class="fa-solid fa-code fa-4x"></i>
+                        </span>
+                        <h2>Applications</h2>
+                        <p>
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                        </p>
+                        <p><a class="btn btn-secondary filled-asdf" href=" {{ pathto('applications/index') }} "
+                                role="button">Start coding &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class="icon">
+                            <i class="fa-solid fa-flask fa-4x"></i>
+                        </span>
+                        <h2>Tutorials</h2>
+                        <p>
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                        </p>
+                        <p><a class="btn btn-secondary filled-asdf" href="{{ pathto('tutorials/index') }}"
+                                role="button">Try for yourself &raquo;</a></p>
+                    </div>
+                </div>
+            </div><!-- ./main-features -->
 
-        <div class="container main-features">
+            <!-- FOOTER -->
             <hr class="section-divider">
-            <div class="row">
-                <div class="col-lg-4">
-                    <span class="icon">
-                        <i class="fa-solid fa-code-branch fa-4x"></i>
-                    </span>
-                    <h2>Schemas</h2>
-                    <p>
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
-                    </p>
-                    <p><a class="btn btn-secondary filled-asdf" href="{{ pathto('extensions/index') }}" role="button">Learn
-                            more &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <span class="icon">
-                        <i class="fa-solid fa-code fa-4x"></i>
-                    </span>
-                    <h2>Applications</h2>
-                    <p>
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
-                    </p>
-                    <p><a class="btn btn-secondary filled-asdf" href=" {{ pathto('applications/index') }} "
-                            role="button">Start coding &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <span class="icon">
-                        <i class="fa-solid fa-flask fa-4x"></i>
-                    </span>
-                    <h2>Tutorials</h2>
-                    <p>
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
-                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
-                    </p>
-                    <p><a class="btn btn-secondary filled-asdf" href="{{ pathto('tutorials/index') }}"
-                            role="button">Try for yourself &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-
-
-        <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-left"><a href="#">Back to top</a></p>
-            <p> <a href="https://github.com/asdf-format/asdf-standard">GitHub Page</a> &middot; 
-                <a href="https://github.com/asdf-format/asdf-standard/blob/main/LICENSE">License</a>
-            </p>
-        </footer>
-    </section>
+            <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p> <a href="https://github.com/asdf-format/asdf-standard">GitHub Page</a> &middot; 
+                    <a href="https://github.com/asdf-format/asdf-standard/blob/main/LICENSE">License</a>
+                </p>
+            </footer>
+        </section>
     </main>
 
     <!-- Bootstrap core JavaScript
