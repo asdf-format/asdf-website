@@ -31,6 +31,9 @@ version = '0.0'
 
 # -- General configuration ---------------------------------------------------
 on_rtd = 'True'
+
+html_baseurl = "https://asdf-format.org"
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -72,7 +75,10 @@ source_suffix = ".rst"
 language = "en"
 
 # The name of the Pygments (syntax highlighting) style to use.
-# pygments_style = "sphinx"
+pygments_style = "monokai"
+
+# NB Dark style pygments is furo-specific at this time
+# pygments_dark_style = "monokai"
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 default_role = "ref"
@@ -158,6 +164,11 @@ html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 html_show_copyright = True
+
+
+html_js_files = [
+    'js/custom.js',
+]
 
 # html_context = {"bootswatch_css_custom": ["_static/custom.css"]}
 
