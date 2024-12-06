@@ -32,7 +32,7 @@ version = '0.0'
 # -- General configuration ---------------------------------------------------
 on_rtd = 'True'
 
-html_baseurl = "https://asdf-format.org"
+html_baseurl = "https://www.asdf-format.org"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
