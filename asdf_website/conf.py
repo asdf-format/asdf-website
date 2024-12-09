@@ -47,9 +47,9 @@ extensions = [
 intersphinx_mapping = {
     "asdf-standard": ("https://asdf-standard.readthedocs.io/en/latest/", None),
     "asdf": ("https://asdf.readthedocs.io/en/latest/", None),
-    "asdf-transform-schemas": ("https://asdf-transform-schemas.readthedocs.io/en/latest/", None),
-    "asdf-wcs-schemas": ("https://asdf-wcs-schemas.readthedocs.io/en/latest/", None),
-    "asdf-coordinates-schemas": ("https://asdf-coordinates-schemas.readthedocs.io/en/latest/", None),
+    "asdf-coordinates-schemas": ("https://www.asdf-format.org/projects/asdf-coordinates-schemas/en/latest/", None),
+    "asdf-transform-schemas": ("https://www.asdf-format.org/projects/asdf-transform-schemas/en/latest/", None),
+    "asdf-wcs-schemas": ("https://www.asdf-format.org/projects/asdf-wcs-schemas/en/latest/", None),
     "astropy": ("https://docs.astropy.org/en/stable", None),
     "asdf-astropy": ("https://asdf-astropy.readthedocs.io/en/latest/", None),
 }
