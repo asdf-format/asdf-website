@@ -76,7 +76,7 @@ ASDF is primarily intended as an interchange format for delivering products from
 ASDF Standard
 -------------
 
-The :doc:`ASDF Standard <standard/index>` proscribes implementation standards and requirements for creating, editing and reading files written in the Advanced Scientific Data Format (asdf). This is a good place to start if you want to understand more about the file layout, tree structure, and core schema requirements of ASDF.
+The :doc:`ASDF Standard <standard/index>` prescribes implementation standards and requirements for creating, editing and reading files written in the Advanced Scientific Data Format (asdf). This is a good place to start if you want to understand more about the file layout, tree structure, and core schema requirements of ASDF.
 
 
 Extensions: Optional Schemas
