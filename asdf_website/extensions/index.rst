@@ -3,7 +3,7 @@
 Extensions
 ==========
 
-In addition to the core schemas defined in the ASDF Standard, there are several additional schemas available as extensions. These schemas are based upon the schemas in the :ref:`ASDF Standard <asdf-standard:asdf-standard>` and are packaged for use by the :ref:`ASDF <asdf:asdf>` library.
+In addition to the core schemas defined in the ASDF Standard, there are several additional schemas available as extensions. These schemas are based upon the schemas in :ref:`ASDF Standard <asdf-standard:asdf-standard>` and are packaged for use by the :ref:`asdf <asdf:asdf>` library.
 
 .. toctree::
    :maxdepth: 1

@@ -40,12 +40,11 @@ html_baseurl = "https://www.asdf-format.org"
 extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
-    # "sphinx.ext.githubpages",
 ]
 
 
 intersphinx_mapping = {
-    "asdf-standard": ("https://asdf-standard.readthedocs.io/en/latest/", None),
+    "asdf-standard": ("https://www.asdf-format.org/projects/asdf-standard/en/latest/", None),
     "asdf": ("https://asdf.readthedocs.io/en/latest/", None),
     "asdf-coordinates-schemas": ("https://www.asdf-format.org/projects/asdf-coordinates-schemas/en/latest/", None),
     "asdf-transform-schemas": ("https://www.asdf-format.org/projects/asdf-transform-schemas/en/latest/", None),
@@ -78,7 +77,7 @@ language = "en"
 pygments_style = "monokai"
 
 # NB Dark style pygments is furo-specific at this time
-# pygments_dark_style = "monokai"
+pygments_dark_style = "monokai"
 
 # Render inheritance diagrams in SVG
 graphviz_output_format = "svg"
@@ -104,7 +103,7 @@ source_encoding = "utf-8"
 
 # -- Options for HTML output -------------------------------------------------
 
-html_title = "ASDF"
+html_title = "ASDF Documentation"
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
@@ -178,13 +177,17 @@ html_show_sphinx = True
 html_show_copyright = True
 
 
-html_js_files = [
-    'js/custom.js',
-]
+# html_css_files = [
+#     'css/globalnav.css',
+#     # 'css/custom.css',
+# ]
 
-# html_context = {"bootswatch_css_custom": ["_static/custom.css"]}
+# html_js_files = [
+#     'js/custom.js',
+# ]
+
 
 intersphinx_disabled_reftypes = ["*"]
 
-def setup(app):
-    app.add_css_file("custom.css")
+# def setup(app):
+#     app.add_css_file("custom.css")
