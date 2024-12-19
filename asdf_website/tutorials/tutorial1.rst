@@ -775,7 +775,7 @@ This means that in order to create a ``tag`` for a given Python object we really
 4. Creating a Schema
 ^^^^^^^^^^^^^^^^^^^^
 
-Recall that in chapter 4 `ch4-extensions` above, we discussed in depth how to create ASDF schemas. In particular note that schemas are typically stored in ``yaml`` files which are then loaded into ASDF via an entry point.
+Recall that in chapter 3 `ch3-anatomy` above, we discussed in depth how to create ASDF schemas. In particular note that schemas are typically stored in ``yaml`` files which are then loaded into ASDF via an entry point.
 
 To begin with lets create the schema for ``Ellipse`` dynamically (without needing to package our code for an entry point):
 
