@@ -23,6 +23,8 @@ dependencies = [
 [project.optional-dependencies]
 docs = [
     'sphinx-autobuild',
+    'sphinx-copybutton',
+    'sphinx-tabs',
 ]
 
 

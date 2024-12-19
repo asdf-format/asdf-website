@@ -276,7 +276,7 @@ a:hover {
 
 .filled-asdf:hover {
   color: #000;
-  background-color: #fff;
+  background-color: transparent;
   border-color: #11c192;
 }
 

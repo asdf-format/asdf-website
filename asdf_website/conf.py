@@ -40,6 +40,8 @@ html_baseurl = "https://www.asdf-format.org"
 extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
+    "sphinx_copybutton",
+    "sphinx_tabs.tabs",
 ]
 
 
@@ -148,9 +150,12 @@ html_additional_pages = {
 html_favicon = "_static/images/favicon.ico"
 # html_logo = "_static/images/logo.png"
 
+topbanner = "<a href='https://www.asdf-format.org'>Home</a>&nbsp;&nbsp;<a href='https://www.asdf-format.org/en/latest/tutorials/index.html'>Tutorials</a>"
+
 html_theme_options = {
     "light_logo": "images/logo-light-mode.png",
     "dark_logo": "images/logo-dark-mode.png",
+    "announcement": topbanner,
 }
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
