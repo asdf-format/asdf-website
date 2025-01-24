@@ -11,3 +11,4 @@ Index
    extensions <extensions/index.rst>
    applications <applications/index.rst>
    tutorials <tutorials/index.rst>
+   community <community/index.rst>

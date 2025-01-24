@@ -150,7 +150,16 @@ html_additional_pages = {
 html_favicon = "_static/images/favicon.ico"
 # html_logo = "_static/images/logo.png"
 
-topbanner = "<a href='https://www.asdf-format.org'>Home</a>&nbsp;&nbsp;<a href='https://www.asdf-format.org/en/latest/tutorials/index.html'>Tutorials</a>"
+globalnavlinks = {
+    "Docs": "https://www.asdf-format.org",
+    "Tutorials": "https://www.asdf-format.org/en/latest/tutorials/index.html",
+    "Community": "https://www.asdf-format.org/en/latest/community/index.html",
+    "Installation": "https://www.asdf-format.org/en/latest/applications/index.html",
+}
+
+topbanner = ""
+for text, link in globalnavlinks.items():
+    topbanner += f"<a href={link}>{text}</a>"
 
 html_theme_options = {
     "light_logo": "images/logo-light-mode.png",
@@ -194,5 +203,5 @@ html_show_copyright = True
 
 intersphinx_disabled_reftypes = ["*"]
 
-# def setup(app):
-#     app.add_css_file("custom.css")
+def setup(app):
+    app.add_css_file("css/globalnav.css")

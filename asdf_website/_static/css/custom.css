@@ -57,6 +57,16 @@ a:hover {
   background-color: #00A87B;
 }
 
+/* Top Banner Navigation
+-------------------------------------------------- */
+.announcement-content a {
+  padding-right: 1em;
+}
+
+.announcement-content a:hover {
+  color: fuchsia;
+}
+
 /* Splash element
 -------------------------------------------------- */
 .splash {
