@@ -15,15 +15,15 @@ Get involved and stay tuned in with proposed upcoming changes and releases
 - `ASDF Users <https://groups.google.com/forum/#!forum/asdf-users>`__
 - `ASDF Developers <https://groups.google.com/forum/#!forum/asdf-developers>`__
 
-Workshops
----------
+Workshops/Tutorials
+-------------------
 
-*Step 2: Try an interactive workshop*
+*Step 2: Try an interactive tutorial from one of our recent workshops*
 
 Step-by-step walkthroughs allow you to become familiar with using ``asdf`` to create and edit ASDF files with your own data. 
 
-- `SciPy 2022 <https://github.com/asdf-format/scipy2022tutorial/>`__
-- `ADASS 2024 <https://github.com/asdf-format/asdf-adass2024>`__
+- :doc:`Working with ASDF Files in Python (SciPy 2022) <../tutorials/tutorial1>`
+- :doc:`Using ASDF with Astronomical Data (ADASS 2024) <../tutorials/tutorial2>`
 
 
 Discussions & Community Calls

@@ -48,6 +48,8 @@ extensions = [
 intersphinx_mapping = {
     "asdf-standard": ("https://www.asdf-format.org/projects/asdf-standard/en/latest/", None),
     "asdf": ("https://asdf.readthedocs.io/en/latest/", None),
+    # TODO: replace above with below once asdf is made a subproject
+    # "asdf": ("https://www.asdf-format.org/projects/asdf/en/latest/", None),
     "asdf-coordinates-schemas": ("https://www.asdf-format.org/projects/asdf-coordinates-schemas/en/latest/", None),
     "asdf-transform-schemas": ("https://www.asdf-format.org/projects/asdf-transform-schemas/en/latest/", None),
     "asdf-wcs-schemas": ("https://www.asdf-format.org/projects/asdf-wcs-schemas/en/latest/", None),
@@ -55,6 +57,9 @@ intersphinx_mapping = {
     "asdf-astropy": ("https://asdf-astropy.readthedocs.io/en/latest/", None),
 }
 
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
 static_dir = os.path.join(os.path.dirname(__file__), "_static")
@@ -124,14 +129,6 @@ html_theme = "furo"
 # Override default settings from sphinx_asdf / sphinx_astropy (incompatible with furo)
 html_sidebars = {}
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
-
-static_dir = os.path.join(os.path.dirname(__file__), "_static")
-
-
 # The root toctree document.
 root_doc = "index"
 
@@ -148,10 +145,10 @@ html_additional_pages = {
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 html_favicon = "_static/images/favicon.ico"
-# html_logo = "_static/images/logo.png"
+
 
 globalnavlinks = {
-    "Docs": "https://www.asdf-format.org",
+    "Projects": "https://www.asdf-format.org",
     "Tutorials": "https://www.asdf-format.org/en/latest/tutorials/index.html",
     "Community": "https://www.asdf-format.org/en/latest/community/index.html",
     "Installation": "https://www.asdf-format.org/en/latest/applications/index.html",

@@ -58,10 +58,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ pathto('overview') }}">Docs</a>
+                        <a class="nav-link" href="{{ pathto('overview') }}">Overview</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ pathto('standard/index') }}">The Standard</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="docs-dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Docs</a>
+                        <div class="dropdown-menu" aria-labelledby="docs-dropdown-menu">
+                            <a class="dropdown-item" href="https://www.asdf-format.org/projects/asdf-standard/en/latest">ASDF Standard</a>
+                            <a class="dropdown-item" href="https://asdf.readthedocs.io/en/latest/index.html#asdf">asdf (python)</a>
+                            <a class="dropdown-item" href="{{ pathto('applications/asdf-cpp') }}">asdf (C++)</a>
+                            <a class="dropdown-item" href="{{ pathto('applications/asdf-julia')}}">asdf (Julia)</a>
+                            <a class="dropdown-item" href="https://www.asdf-format.org/projects/asdf-coordinates-schemas">Coordinates Schemas</a>
+                            <a class="dropdown-item" href="https://www.asdf-format.org/projects/asdf-transform-schemas">Transform Schemas</a>
+                            <a class="dropdown-item" href="https://www.asdf-format.org/projects/asdf-wcs-schemas">WCS Schemas</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="get-started-dropdown-menu" data-toggle="dropdown"
@@ -69,9 +78,9 @@
                             Get Started
                         </a>
                         <div class="dropdown-menu" aria-labelledby="get-started-dropdown-menu">
+                            <a class="dropdown-item" href="{{ pathto('applications/index') }}">Installation</a>
                             <a class="dropdown-item" href="{{ pathto('tutorials/index') }}">Tutorials</a>
                             <a class="dropdown-item" href="{{ pathto('extensions/index') }}">Extensions</a>
-                            <a class="dropdown-item" href="{{ pathto('applications/index') }}">Applications</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -80,6 +89,7 @@
                             Community
                         </a>
                         <div class="dropdown-menu" aria-labelledby="community-dropdown-menu">
+                            <a class="dropdown-item" href="{{ pathto('community/index') }}">Get Involved</a>
                             <a class="dropdown-item" href="https://github.com/asdf-format">Github Repos</a>
                             <a class="dropdown-item" href="https://pypi.org/project/asdf/">PyPI</a>
                             <a class="dropdown-item"
@@ -157,8 +167,8 @@
             <hr class="section-divider">
             <footer class="container">
                 <p class="float-right"><a href="#">Back to top</a></p>
-                <p> <a href="https://github.com/asdf-format/asdf-standard">GitHub Page</a> &middot; 
-                    <a href="https://github.com/asdf-format/asdf-standard/blob/main/LICENSE">License</a>
+                <p> <a href="https://github.com/asdf-format/">GitHub Page</a> &middot; 
+                    <a href="https://github.com/asdf-format/asdf-website/blob/main/LICENSE">License</a>
                 </p>
             </footer>
         </section>
@@ -172,9 +182,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- Custom JS -->
-    <script src="{{ pathto('_static/js/custom.js', 1) }}"></script>
+
 
 
 </body>
+    <!-- Custom JS -->
+    <script src="{{ pathto('_static/js/custom.js', 1) }}">hideHomePageAds();</script>
 </html>

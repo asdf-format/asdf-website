@@ -99,18 +99,11 @@ The ASDF standard is being developed concurrently with a reference implementatio
 - :doc:`Julia <applications/asdf-julia>` 
 
 
-Tutorials
----------
+Tutorials/Workshops
+-------------------
 
-- :doc:`Tutorial 1 <tutorials/tutorial1>`
-- :doc:`Tutorial 2 <tutorials/tutorial2>`
-
-Workshops
----------
-
-- `SciPy 2022 <https://github.com/asdf-format/scipy2022tutorial/>`__
-
-- `ADASS 2024 <https://github.com/asdf-format/asdf-adass2024>`__
+- :doc:`tutorials/tutorial1`
+- :doc:`tutorials/tutorial2`
 
 
 Community
