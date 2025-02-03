@@ -47,9 +47,7 @@ extensions = [
 
 intersphinx_mapping = {
     "asdf-standard": ("https://www.asdf-format.org/projects/asdf-standard/en/latest/", None),
-    "asdf": ("https://asdf.readthedocs.io/en/latest/", None),
-    # TODO: replace above with below once asdf is made a subproject
-    # "asdf": ("https://www.asdf-format.org/projects/asdf/en/latest/", None),
+    "asdf": ("https://www.asdf-format.org/projects/asdf/en/stable/", None),
     "asdf-coordinates-schemas": ("https://www.asdf-format.org/projects/asdf-coordinates-schemas/en/latest/", None),
     "asdf-transform-schemas": ("https://www.asdf-format.org/projects/asdf-transform-schemas/en/latest/", None),
     "asdf-wcs-schemas": ("https://www.asdf-format.org/projects/asdf-wcs-schemas/en/latest/", None),
@@ -148,10 +146,9 @@ html_favicon = "_static/images/favicon.ico"
 
 
 globalnavlinks = {
-    "Projects": "https://www.asdf-format.org",
+    "ASDF Projects": "https://www.asdf-format.org",
     "Tutorials": "https://www.asdf-format.org/en/latest/tutorials/index.html",
     "Community": "https://www.asdf-format.org/en/latest/community/index.html",
-    "Installation": "https://www.asdf-format.org/en/latest/applications/index.html",
 }
 
 topbanner = ""
