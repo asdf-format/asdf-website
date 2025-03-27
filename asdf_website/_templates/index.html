@@ -187,8 +187,20 @@
 
 </body>
     <!-- Custom JS -->
-     <script async type="text/javascript" src="_static/js/custom.js"></script>
-     <script>
-     hideAds();
-     </script>
+    <!-- <script async type="text/javascript" src="_static/js/custom.js"></script> -->
+    <script>
+    function hideAds() {
+        const adIds = ["readthedocs-ea", "readthedocs-ea-text-footer"];
+        adIds.forEach(element => {
+        var rtdAd = document.getElementById(element);
+        if (rtdAd != null && !rtdAd.hasAttribute("hidden")) {
+            rtdAd.setAttribute("hidden", "true");
+        }});
+    }
+    if (document.readyState === "loading"){
+        document.addEventListener('DOMContentLoaded', hideAds());
+    } else {
+        hideAds();
+    }
+    </script>
 </html>
