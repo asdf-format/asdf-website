@@ -101,6 +101,7 @@ a:hover {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  background-image: url("_static/images/star-hemispheres.svg");
   background-repeat: no-repeat;
   z-index:1;
 }
