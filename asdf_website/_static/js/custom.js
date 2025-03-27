@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+function hideAds() {
     const adIds = ["readthedocs-ea", "readthedocs-ea-text-footer"];
     adIds.forEach(element => {
         var rtdAd = document.getElementById(element);
@@ -6,4 +6,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             rtdAd.setAttribute("hidden", "true");
         }
     });
-});
+}
+
+if (document.readyState === "loading"){
+    document.addEventListener('DOMContentLoaded', hideAds());
+} else {
+    hideAds();
+}
