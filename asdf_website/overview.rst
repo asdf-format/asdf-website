@@ -12,23 +12,17 @@ The Advanced Scientific Data Format (ASDF, pronounced *"Az-diff"*) is a next-gen
 
 *Key Features*
 
-* A hierarchical, human-readable metadata structure, made up of basic dynamic data types such as strings, numbers, lists and mappings which can be edited directly in place in the file.
+* Hierarchical, human-readable metadata, made up of basic and rich data types.
 
-* Numerical arrays are stored as binary data blocks which can be memory mapped for efficient access, while data blocks can optionally be compressed. 
+* Efficient binary array storage that can optionally be compressed or memory mapped.
 
-* Read and write the file in as a stream, without requiring random access.
+* Content validation using schemas.
 
-* The structure of the data can be automatically validated using schemas (implemented using JSON Schema).
+* Designed for extensibility.
 
-* Native Python data types (numerical types, strings, dicts, lists) are serialized automatically
+* Files and contents are versioned to maintain backwards compatibility.
 
-* Designed for extensibility: ASDF can be extended to serialize custom data types, and new conventions may be used without breaking backward compatibility with tools that do not understand those conventions. 
-
-* Versioning systems: used to prevent conflicting with alternative conventions. Since every ASDF file has the version of the specification to which it is written, it will be possible, through careful planning, to evolve the ASDF format over time, allowing for files that use new features while retaining backward compatibility with older tools.
-
-* Built on top of industry standards, such as `YAML
-  <http://www.yaml.org>`__ and `JSON Schema
-  <http://www.json-schema.org>`__ to take advantage of a larger community working on the core problems of data representation. This also makes it easier to support ASDF in new programming languages and environments by building on top of existing libraries.
+* Built on top of industry standards (`YAML <http://www.yaml.org>`__ and `JSON Schema <http://www.json-schema.org>`__)
 
 
 **What about FITS?**
@@ -39,8 +33,7 @@ The Flexible Image Transport System (FITS) has been the de facto standard for st
 
 Newer formats, such as `VOTable
 <http://www.ivoa.net/documents/VOTable/>`__ have partially addressed the problem of richer, more structured metadata, by using tree structures rather than flat key/value pairs. However, those text-based formats are unsuitable for storing large amounts of binary data. On the other end of the spectrum, formats such as `HDF5
-<http://www.hdfgroup.org/HDF5/>`__ and `BLZ
-<http://blaze.pydata.org/>`__ address problems with large data sets and distributed computing, but don't really address the metadata needs of an interchange format. ASDF aims to exist in the same middle ground that made FITS so successful, by being a hybrid text and binary format: containing human editable metadata for interchange, and raw binary data that is fast to load and use. Unlike FITS, the metadata is highly structured and is designed up-front for extensibility.
+<http://www.hdfgroup.org/HDF5/>`__ address problems with large data sets and distributed computing, but don't really address the metadata needs of an interchange format. ASDF aims to exist in the same middle ground that made FITS so successful, by being a hybrid text and binary format: containing human editable metadata for interchange, and raw binary data that is fast to load and use. Unlike FITS, the metadata is highly structured and is designed up-front for extensibility.
 
 *Incorporated standards*
 
