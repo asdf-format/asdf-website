@@ -3,28 +3,19 @@ name = 'asdf_website'
 description = 'The ASDF Website'
 readme = 'README.md'
 requires-python = '>=3.9'
-license = { file = 'LICENSE' }
+license-files = ['LICENSE']
 authors = [{ name = 'The ASDF Developers', email = 'help@stsci.edu' }]
 classifiers = [
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3.10',
-    'Programming Language :: Python :: 3.11',
-    'Programming Language :: Python :: 3.12',
     'Development Status :: 5 - Production/Stable',
 ]
 version = '0.0.0'
 dependencies = [
     'sphinx',
-    'furo',
-    'tomli',
-]
-[project.optional-dependencies]
-docs = [
     'sphinx-autobuild',
     'sphinx-copybutton',
     'sphinx-tabs',
+    'furo',
+    'tomli',
 ]
-
-
