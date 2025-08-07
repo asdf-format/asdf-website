@@ -18,13 +18,9 @@ Get involved and stay tuned in with proposed upcoming changes and releases
 Workshops/Tutorials
 -------------------
 
-*Step 2: Try an interactive tutorial from one of our recent workshops*
+*Step 2: Try an :doc:`interactive tutorial <../tutorials/index>` from one of our recent workshops*
 
 Step-by-step walkthroughs allow you to become familiar with using ``asdf`` to create and edit ASDF files with your own data. 
-
-- :doc:`Working with ASDF Files in Python (SciPy 2022) <../tutorials/tutorial1>`
-- :doc:`Using ASDF with Astronomical Data (ADASS 2024) <../tutorials/tutorial2>`
-
 
 Discussions & Community Calls
 -----------------------------
