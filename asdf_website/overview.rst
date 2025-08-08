@@ -95,8 +95,7 @@ The ASDF standard is being developed concurrently with a reference implementatio
 Tutorials/Workshops
 -------------------
 
-- :doc:`tutorials/tutorial1`
-- :doc:`tutorials/tutorial2`
+- :doc:`tutorials/index`
 
 
 Community
