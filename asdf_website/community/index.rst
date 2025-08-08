@@ -8,7 +8,7 @@ Get plugged-in to the ASDF community to stay updated on new developments, ask qu
 Mailing Lists
 -------------
 
-*Step 1: Subscribe to one of our Mailing Lists*
+Step 1: Subscribe to one of our Mailing Lists
 
 Get involved and stay tuned in with proposed upcoming changes and releases
 
@@ -18,14 +18,14 @@ Get involved and stay tuned in with proposed upcoming changes and releases
 Workshops/Tutorials
 -------------------
 
-*Step 2: Try an :doc:`interactive tutorial <../tutorials/index>` from one of our recent workshops*
+Step 2: Try an :ref:`interactive tutorial <tutorials>` from one of our recent workshops
 
 Step-by-step walkthroughs allow you to become familiar with using ``asdf`` to create and edit ASDF files with your own data. 
 
 Discussions & Community Calls
 -----------------------------
 
-*Step 3: Join a Discussion or contribute to Community Calls*
+Step 3: Join a Discussion or contribute to Community Calls
 
 We know you have thoughts and ideas and we'd love to hear them! Now that you're an ASDF expert (and even if you're not), we encourage you to start or join a discussion on github. Contribute to our Community Calls
 
