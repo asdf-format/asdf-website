@@ -85,9 +85,10 @@ In addition to the core schemas defined by the ASDF Standard, there are several 
 Applications
 ------------
 
-The ASDF standard is being developed concurrently with a reference implementation written in Python. There are two prototype implementations for C++ and Julia. Neither is currently feature-complete but provide enough functionality to read and write ASDF files.
+The ASDF standard is being developed concurrently with a reference implementation written in Python. There are prototype implementations for C, C++ and Julia. None are currently feature-complete but provide enough functionality to read and write ASDF files.
 
 - :doc:`python <applications/asdf-python>`
+- :doc:`C <applications/asdf-c>`
 - :doc:`C++ <applications/asdf-cpp>`
 - :doc:`Julia <applications/asdf-julia>` 
 
