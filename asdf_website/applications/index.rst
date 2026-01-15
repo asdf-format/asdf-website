@@ -6,6 +6,7 @@ Applications
 .. toctree::
    :maxdepth: 1
 
-   python <asdf-python.rst>
-   c++ <asdf-cpp.rst>
-   julia <asdf-julia.rst>
+   Python <asdf-python.rst>
+   C (libasdf) <asdf-c.rst>
+   C++ <asdf-cpp.rst>
+   Julia <asdf-julia.rst>
