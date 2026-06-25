@@ -7,7 +7,7 @@ Index
    :maxdepth: 1
 
    overview <overview.rst>
-   standard <standard/index.rst>
+   specification <specification/index.rst>
    extensions <extensions/index.rst>
    applications <applications/index.rst>
    tutorials <tutorials/index.rst>

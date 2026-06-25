@@ -3,7 +3,7 @@
 ASDF for C++
 ============
 
-`asdf-cxx <https://github.com/eschnett/asdf-cxx>`__ is an open-source prototype implementation of the ASDF Standard in C++ authored by `Erik Schnetter <https://github.com/eschnett>`__. Although not yet feature-complete, the library supports ASDF's core capabilities of storing metadata in YAML and serializing n-dimensional numerical data arrays.
+`asdf-cxx <https://github.com/eschnett/asdf-cxx>`__ is an open-source prototype implementation of the ASDF Specification in C++ authored by `Erik Schnetter <https://github.com/eschnett>`__. Although not yet feature-complete, the library supports ASDF's core capabilities of storing metadata in YAML and serializing n-dimensional numerical data arrays.
 
 
 Installation Requirements

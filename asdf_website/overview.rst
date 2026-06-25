@@ -62,20 +62,20 @@ The ASDF format is built on top of a number of existing standards:
 
 **Limitations**
 
-ASDF is primarily intended as an interchange format for delivering products from instruments to scientists or between scientists. While it is reasonably efficient to work with and transfer, it may not be optimal for direct use on large data sets in distributed and high performance computing environments. That is explicitly not a goal of the ASDF standard, as those requirements can sometimes be at odds with the needs of an interchange format. ASDF still has a place in those environments as a delivery mechanism, even if it ultimately is not the actual format on which the computing is performed.
+ASDF is primarily intended as an interchange format for delivering products from instruments to scientists or between scientists. While it is reasonably efficient to work with and transfer, it may not be optimal for direct use on large data sets in distributed and high performance computing environments. That is explicitly not a goal of the ASDF specification, as those requirements can sometimes be at odds with the needs of an interchange format. ASDF still has a place in those environments as a delivery mechanism, even if it ultimately is not the actual format on which the computing is performed.
 
 
 
-ASDF Standard
--------------
+ASDF Specification
+------------------
 
-The :doc:`ASDF Standard <standard/index>` prescribes implementation standards and requirements for creating, editing and reading files written in the Advanced Scientific Data Format (asdf). This is a good place to start if you want to understand more about the file layout, tree structure, and core schema requirements of ASDF.
+The :doc:`ASDF Specification <specification/index>` prescribes the file format and requirements for creating, editing and reading files written in the Advanced Scientific Data Format (asdf). This is a good place to start if you want to understand more about the file layout, tree structure, and core schema requirements of ASDF.
 
 
 Extensions: Optional Schemas
 ----------------------------
 
-In addition to the core schemas defined by the ASDF Standard, there are several optional schemas that can be used as :doc:`extensions <extensions/index>`.
+In addition to the core schemas defined by the ASDF Specification, there are several optional schemas that can be used as :doc:`extensions <extensions/index>`.
 
 - :doc:`transform <extensions/asdf-transform-schemas>`
 - :doc:`coordinates <extensions/asdf-coordinates-schemas>`
@@ -85,7 +85,7 @@ In addition to the core schemas defined by the ASDF Standard, there are several 
 Applications
 ------------
 
-The ASDF standard is being developed concurrently with a reference implementation written in Python. There are two prototype implementations for C++ and Julia. Neither is currently feature-complete but provide enough functionality to read and write ASDF files.
+The ASDF specification is being developed concurrently with a reference implementation written in Python. There are two prototype implementations for C++ and Julia. Neither is currently feature-complete but provide enough functionality to read and write ASDF files.
 
 - :doc:`python <applications/asdf-python>`
 - :doc:`C++ <applications/asdf-cpp>`
