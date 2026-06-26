@@ -119,8 +119,38 @@ usage it is often helpful to focus on the data model of interest and less on the
 Data types
 ^^^^^^^^^^
 
-header values scalar vs rich
-customized type for ASDF
+FITS supports scalar values within keyword records and data arrays (and tables) in HDUs. Keyword
+records can have 8 ASCII character length names and a value that can be one of the handful of
+scalar data types defined in the standard. HDUs can contain either array or tabular data.
+Additionally, the standard defines a collection of keywords and HDUs that combined represent
+a world coordinate system (WCS). This collection of items and specification for how they are
+related can be thought of as a data model for a WCS which is based off the fundemental types
+in FITS (keywords and data arrays/tables).
+
+ASDF supports scalar and array values within the tree. Through the ASDF data model framework
+these fundemental types can be combined to construct more complex data models. The most common
+WCS data model used for ASDF is provided by `gwcs <https://gwcs.readthedocs.io/en/latest/>`__
+which uses the `wcs schema <https://www.asdf-format.org/projects/asdf-wcs-schemas/en/latest/generated/gwcs/wcs-1.1.0.html>`__. ASDF files that contain a WCS will have a node (location in the ASDF tree) that
+is tagged with the wcs tag:
+
+.. code-block:: yaml
+   wcs: !<tag:stsci.edu:gwcs/wcs-1.4.0>
+     ...
+
+ASDF imposes no restriction on where this WCS is located and instead allows data model
+designers to add a restriction for thier particular data model. A user or application developer
+interested in using a WCS within an ASDF file should first consult any defined data model for
+the ASDF file (by inspecting tags within the file and consulting the associated data model
+documentation and schemas).
+
+Summary
+-------
+
+ASDF and FITS are both file formats. However the FITS standard defines a singular data model
+that is specific to astronomy. The ASDF specification defines a framework that allows
+users to define domain-specifc data models. FITS files are flat with a limited number of standard
+data types. ASDF can be flat or nested and extensible allowing users to define custom types
+(data models) that can be arbitrarily nested.
 
 References
 ----------
