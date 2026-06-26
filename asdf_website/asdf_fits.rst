@@ -6,7 +6,6 @@ ASDF for FITS users
 ASDF was developed for use in astronomy [GreenField2015]_. For users familiar with FITS it may be
 helpful to make some comparisons between the two formats to help understand ASDF.
 
-
 Data models
 -----------
 
@@ -15,22 +14,24 @@ The FITS standard defines:
 - a file format: a description of how bytes are encoded and organized on disk
 - a data model: requirements and descriptions of how data is organized and interrelated
 
-The ASDF specification defines:
+The :ref`ASDF specification <asdf-standard:asdf-standard>` defines:
 
 - a file format
 - a framework and tooling that can be used to define data models
 
 Both describe a file format, however the ASDF specification does not define a singular data model. This
-is an intentional decision that allows ASDF to be adapted to different data types and fields of
+is an intentional decision that allows ASDF to be adapted to different datasets and fields of
 study including but not limited to astronomy.
 
 It is important for users to be aware of this distinction when applying FITS experience
-to working with ASDF files. For example, the ASDF specification does not describe a TELESCOP keyword
-that can contain the name of the telescope. Instead, ASDF provides a framework that uses tags and
-schemas allowng a user to define a data model. Using this framework a user can define a
-property that can contain the name of the telescope, including a  description of that property
-and optionally constrains the possible values. For an example, see the
-`telescope metadata schema for the Roman mission <https://rad.readthedocs.io/en/0.30.0/generated/schemas/meta/telescope-1.0.0.html#meta-telescope-1-0-0>`__. Practically this means users should consult the documentation
+to working with ASDF files. For example, the ASDF specification does not describe a ``TELESCOP`` keyword
+that can contain the name of the telescope. Instead, ASDF provides a framework that uses
+:ref:`tags <asdf-standard:tags>` and :ref:`schemas <asdf-standard:asdf-schemas>` with which a user can
+define a data model. Using this framework a user may define a
+property that can contain the name of the telescope, include a description of that property
+and optionally constrain the possible values or types. For an example, see the
+`telescope metadata schema for the Roman mission <https://rad.readthedocs.io/en/0.30.0/generated/schemas/meta/telescope-1.0.0.html#meta-telescope-1-0-0>`__.
+Practically, users should consult the documentation
 and schemas provided by the data model designers for questions about metadata organization instead
 of expecting that the ASDF specification will provide answers. This is similar to
 working with FITS files as often handling real data requires understanding the keywords and data
@@ -64,7 +65,6 @@ ASDF files are composed of:
 
 - a "tree" containing a flat or nested description of the file contents
 - optionally 1 or more binary "blocks"
-
 
 Data and Metadata
 ^^^^^^^^^^^^^^^^^
