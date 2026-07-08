@@ -71,7 +71,7 @@ One difference to note is how the two formats handle data and metadata. ASDF fil
 :ref:`tree <asdf-standard:tree>` which can contain both data and metadata at arbitrary depth of nodes (locations in the ASDF tree). FITS files contain
 one data array per HDU and metadata in keywords records. Practically, a user wanting to access
 the metadata in an ASDF file will inspect the ASDF tree. The same is true for the data in the ASDF file which is also
- accessed via the tree. Distinguishing data vs metadata for an ASDF file requires understanding the
+accessed via the tree. Distinguishing data vs metadata for an ASDF file requires understanding the
 data model (including the tags and schemas) used by the creator of the file.
 
 This difference can lead to some confusion when FITS terminology is applied to ASDF files.
