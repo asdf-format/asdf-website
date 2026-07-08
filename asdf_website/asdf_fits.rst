@@ -36,13 +36,9 @@ to how for Roman data there is a `telescope metadata schema <https://rad.readthe
 which describes and constrains the "telescope" value that is referenced in other
 `Roman Datamodels <https://roman-datamodels.readthedocs.io/en/latest/>`__.
 
-Practically, users should consult the documentation
-and schemas provided by the data model designers for questions about metadata organization instead
-of expecting the ASDF specification to provide answers. This is similar to
-working with FITS files, as often handling real data requires understanding the keyword and data
-organization specific to a data set or mission (which has defined their own data model that extends FITS).
-One key difference is that ASDF provides tooling for data model designers to document and
-enforce these decisions.
+Users should consult the documentation, data models, and / or ASDF schemas provided by the data model designer to understand how metadata is organized. 
+This is similar to how specific FITS files often contain non-standard keywords and data organization. 
+One key difference is ASDF provides tools to document these decisions and enforce them with validation.
 
 .. note::
 
