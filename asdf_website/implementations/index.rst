@@ -9,10 +9,10 @@ for more information about each implementation and what features are supported (
 =========================  ========     ===========  =========  ===========  ==========  ==========
 Implementation             Metadata     Tags         Blocks     Compression  Validation  Extensions
 =========================  ========     ===========  =========  ===========  ==========  ==========
-`python <asdf-python>`_    R/W          R/W          R/W        R/W          True        True
-`c++ <asdf-cpp.rst>`_      R/W          R/W [#cpp]_  R [#cpp]_  R/W [#cpp]_
-`java <asdf-java.rst>`_    R            R            R          R
-`julia <asdf-julia.rst>`_  R/W          R/W          R/W        R/W
+`python <asdf-python>`     R/W          R/W          R/W        R/W          True        True
+`c++ <asdf-cpp>`           R/W          R/W [#cpp]_  R [#cpp]_  R/W [#cpp]_
+`java <asdf-java>`         R            R            R          R
+`julia <asdf-julia>`       R/W          R/W          R/W        R/W
 =========================  ========     ===========  =========  ===========  ==========  ==========
 
 .. rubric:: Footnotes
