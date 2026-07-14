@@ -1,7 +1,7 @@
-.. _applications:
+.. _implementations:
 
-Applications
-============
+Implementations
+===============
 
 .. toctree::
    :maxdepth: 1
