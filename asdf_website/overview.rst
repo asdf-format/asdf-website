@@ -82,14 +82,14 @@ In addition to the core schemas defined by the ASDF Specification, there are sev
 - :doc:`wcs <extensions/asdf-wcs-schemas>`
 
 
-Applications
-------------
+Implementations
+---------------
 
-The ASDF specification is being developed concurrently with a reference implementation written in Python. There are two prototype implementations for C++ and Julia. Neither is currently feature-complete but provide enough functionality to read and write ASDF files.
+The ASDF specification is developed concurrently with a reference implementation written in Python. ASDF support in other languages is handled by different "implementations" of the ASDF specification.
 
-- :doc:`python <applications/asdf-python>`
-- :doc:`C++ <applications/asdf-cpp>`
-- :doc:`Julia <applications/asdf-julia>` 
+- :doc:`python <implementations/asdf-python>`
+- :doc:`C++ <implementations/asdf-cpp>`
+- :doc:`Julia <implementations/asdf-julia>` 
 
 
 Tutorials/Workshops
