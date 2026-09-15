@@ -131,6 +131,7 @@ WCS data model used for ASDF is provided by `gwcs <https://gwcs.readthedocs.io/e
 which uses the `wcs schema <https://www.asdf-format.org/projects/asdf-wcs-schemas/en/latest/generated/gwcs/wcs-1.1.0.html>`__. A WCS in an ASDF file has the following tag:
 
 .. code-block:: yaml
+
    wcs: !<tag:stsci.edu:gwcs/wcs-1.4.0>
      ...
 
