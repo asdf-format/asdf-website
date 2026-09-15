@@ -87,7 +87,7 @@ Implementations
 
 The ASDF specification is developed concurrently with a reference implementation written in Python. ASDF support in other languages is handled by different "implementations" of the ASDF specification.
 
-- :doc:`python <implementations/asdf-python>`
+- :doc:`Python <implementations/asdf-python>`
 - :doc:`C <applications/asdf-c>`
 - :doc:`C++ <implementations/asdf-cpp>`
 - :doc:`Java <implementations/asdf-java>`
